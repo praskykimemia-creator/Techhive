@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,9 +8,129 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Inter:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="C:\Users\hp\Downloads\Techhive.png">
 </head>
 <body>
-    Welcome to TechHive, your ultimate destination for the latest in technology, gadgets, and innovation. Explore our articles, reviews, and tutorials to stay ahead in the tech world. 
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="navbar__brand">
+            <span>Tech</span>Hive
+        </a>
+        <ul class="navbar__links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+        <button class="btn btn--primary btn--sm">Sign In</button>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content"> 
+                <p class="hero__eyebrow">TechHive</p>
+                <h1 class="hero__title">Your Tech.<br><em>Your Power.</em></h1>
+                <p class="hero__subtitle">
+             Discover the latest in technology and innovation. From cutting-edge gadgets to essential tools, TechHive brings you the best products to enhance your digital lifestyle.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="btn btn--primary btn--lg">About us</a>
+                    <a href="#" class="btn btn--ghost btn--lg">Products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section">
+        <div class="container">
+            <h2>Featured <em style="font-style:normal; color: var(--color-gold);">Products</em></h2>
+            <hr class="divider" style="margin-top: var(--space-4);">
+            <div class="grid-3" style="margin-top: var(--space-8);">
+
+                <div class="card card--gold">
+                    <div style="background: var(--color-silver-light); height: 180px;"></div>
+                    <div class="card__body">
+                        <span class="badge badge--gold">Label</span>
+                        <h4 class="card__title" style="margin-top: var(--space-3);">Product Name</h4>
+                        <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam quis.</p>
+                        <div class="flex-between" style="margin-top: var(--space-4);">
+                            <span style="font-family: var(--font-display); font-size: var(--text-xl); font-weight: var(--weight-black);">$0.00</span>
+                            <a href="#" class="btn btn--primary btn--sm">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card--gold">
+                    <div style="background: var(--color-silver-light); height: 180px;"></div>
+                    <div class="card__body">
+                        <span class="badge badge--gold">Label</span>
+                        <h4 class="card__title" style="margin-top: var(--space-3);">Product Name</h4>
+                        <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam quis.</p>
+                        <div class="flex-between" style="margin-top: var(--space-4);">
+                            <span style="font-family: var(--font-display); font-size: var(--text-xl); font-weight: var(--weight-black);">$0.00</span>
+                            <a href="#" class="btn btn--primary btn--sm">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card--gold">
+                    <div style="background: var(--color-silver-light); height: 180px;"></div>
+                    <div class="card__body">
+                        <span class="badge badge--gold">Label</span>
+                        <h4 class="card__title" style="margin-top: var(--space-3);">Product Name</h4>
+                        <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam quis.</p>
+                        <div class="flex-between" style="margin-top: var(--space-4);">
+                            <span style="font-family: var(--font-display); font-size: var(--text-xl); font-weight: var(--weight-black);">$0.00</span>
+                            <a href="#" class="btn btn--primary btn--sm">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Why Us -->
+    <section class="section section--dark">
+        <div class="container">
+            <h2 style="color: var(--color-white);">Why <em style="font-style:normal; color: var(--color-gold);">TechHive</em></h2>
+            <hr class="divider" style="margin-top: var(--space-4);">
+            <div class="grid-3" style="margin-top: var(--space-8);">
+
+                <div style="padding: var(--space-6);">
+                    <h5 style="color: var(--color-white);">Lorem Ipsum</h5>
+                    <p style="color: var(--color-silver); margin-top: var(--space-2);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.</p>
+                </div>
+
+                <div style="padding: var(--space-6);">
+                    <h5 style="color: var(--color-white);">Dolor Sit Amet</h5>
+                    <p style="color: var(--color-silver); margin-top: var(--space-2);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.</p>
+                </div>
+
+                <div style="padding: var(--space-6);">
+                    <h5 style="color: var(--color-white);">Consectetur Elit</h5>
+                    <p style="color: var(--color-silver); margin-top: var(--space-2);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--color-bg-dark); border-top: 2px solid var(--color-charcoal-mid); padding: var(--space-8) 0;">
+        <div class="container flex-between">
+            <span class="navbar__brand" style="font-size: var(--text-lg);">
+                <span>Tech</span>Hive
+            </span>
+            <p style="color: var(--color-charcoal-light); font-size: var(--text-sm);">
+                &copy; 2026 TechHive. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
