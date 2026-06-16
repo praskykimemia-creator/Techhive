@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Navigate to home page after successful registration
       (function navigateAfterRegister() {
-        const homeUrl = '/home/index.html';
+        const homeUrl = 'index.html';
         window.location.href = homeUrl;
       })();
     });
