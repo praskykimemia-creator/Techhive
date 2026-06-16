@@ -230,7 +230,7 @@ h6 { font-size: var(--text-lg); }
 
 .btn--sm { padding: var(--space-2) var(--space-4); font-size: var(--text-xs); }
 .btn--lg { padding: var(--space-4) var(--space-8); font-size: var(--text-base); }
-
+.btn--sm p{color:#0D0D0D}
 /* ── Cards ── */
 .card {
   background: var(--color-white);
