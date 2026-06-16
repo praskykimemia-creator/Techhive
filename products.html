@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="products/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/assets-css/site.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Inter:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="C:\Users\hp\Downloads\Techhive.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+</head>
+<body>
+
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="navbar__brand">
+            <span>Tech</span>Hive
+        </a>
+        <ul class="navbar__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="accomplishments.html">Accomplishments</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li>
+                <a href="carts.html" class="cart" title="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-badge"></span>
+                </a>
+            </li>
+        </ul>
+        <button class="btn btn--primary btn--sm">Sign In</button>
+    </nav>
+
+    <div class="content">
+        <div class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li>Bracelets</li>
+                <li>Necklaces</li>
+                <li>Earrings</li>
+            </ul>
+            <ul>
+                <li>Male</li>
+                <li>Female</li>
+            </ul>
+        </div>
+
+        <div class="main">
+<div class="product-card" data-id="laptop-quantum-14" data-title="QuantumBook 14" data-price="599.99">
+    <img src="products/product-images/Laptop 1.jpg" alt="QuantumBook 14 inch sleek silver laptop">
+    <h4 class="product-title">QuantumBook 14</h4>
+    <div class="product-price">$599.99</div>
+    <div class="product-actions">
+        <button class="view-btn">View Specs</button>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-id="laptop-apex-ultraslim" data-title="Apex UltraSlim 13" data-price="1099.00">
+    <img src="products/product-images/Laptop 2.jpg" alt="Apex UltraSlim 13 inch premium laptop">
+    <h4 class="product-title">Apex UltraSlim 13</h4>
+    <div class="product-price">$1,099.00</div>
+    <div class="product-actions">
+        <button class="view-btn">View Specs</button>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-id="laptop-titan-gaming" data-title="Titan X Gaming 15" data-price="1549.99">
+    <img src="products/product-images/Laptop 3.jpg" alt="Titan X Gaming 15 inch laptop with RGB keyboard">
+    <h4 class="product-title">Titan X Gaming 15</h4>
+    <div class="product-price">$1,549.99</div>
+    <div class="product-actions">
+        <button class="view-btn">View Specs</button>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-id="laptop-nexus-lite" data-title="Nexus Lite Chromebook" data-price="349.00">
+    <img src="products/product-images/Laptop 4.jpg" alt="Nexus Lite Chromebook for education and students">
+    <h4 class="product-title">Nexus Lite Chromebook</h4>
+    <div class="product-price">$349.00</div>
+    <div class="product-actions">
+        <button class="view-btn">View Specs</button>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-id="laptop-horizon-creator" data-title="Horizon Creator Studio" data-price="1899.99">
+    <img src="products/product-images/Laptop 5.jpg" alt="Horizon Creator Studio laptop for video and photo editing">
+    <h4 class="product-title">Horizon Creator Studio</h4>
+    <div class="product-price">$1,899.99</div>
+    <div class="product-actions">
+        <button class="view-btn">View Specs</button>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card" data-id="laptop-vanguard-pro" data-title="Vanguard Pro 16" data-price="1249.00">
+    <img src="products/product-images/Laptop 6.jpg" alt="Vanguard Pro 16 inch flagship business laptop">
+    <h4 class="product-title">Vanguard Pro 16</h4>
+    <div class="product-price">$1,249.00</div>
+    <div class="product-actions">
+        <button class="view-btn">View Specs</button>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    <script src="/assets/assets-js/profile.js"></script>
+    <script src="products/products.js"></script>
+    <script src="/assets/assets-js/cart-badge.js"></script>
+    <script src="/assets/assets-js/cart-notify.js"></script>
+    <footer style="background: var(--color-bg-dark); border-top: 2px solid var(--color-charcoal-mid); padding: var(--space-8) 0;">
+        <div class="container flex-between">
+            <span class="navbar__brand" style="font-size: var(--text-lg);">
+                <span>Tech</span>Hive
+            </span>
+            <p style="color: var(--color-charcoal-light); font-size: var(--text-sm);">
+                &copy; 2026 TechHive. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+</html>

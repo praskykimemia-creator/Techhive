@@ -6,6 +6,7 @@
     <title>TechHive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Inter:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="C:\Users\hp\Downloads\Techhive.png">
@@ -19,10 +20,15 @@
         </a>
         <ul class="navbar__links">
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href="accomplishments.html">Accomplishments</a></li>
-            <li><a href=""></a></li>
+            <li><a href="accomplishments.html" >Accomplishments</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li>
+                <a href="carts.html" class="cart" title="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-badge"></span>
+                </a>
+            </li>
         </ul>
         <button class="btn btn--primary btn--sm">Sign In</button>
     </nav>
@@ -38,7 +44,7 @@
                 </p>
                 <div class="flex gap-4">
                     <a href="#" class="btn btn--primary btn--lg">About us</a>
-                    <a href="#" class="btn btn--ghost btn--lg">Products</a>
+                    <a href="products.html" class="btn btn--ghost btn--lg">Products</a>
                 </div>
             </div>
         </div>
@@ -120,6 +126,8 @@
         </div>
     </section>
 
+
+    <script src="/assets/assets-js/profile.js"></script>
     <!-- Footer -->
     <footer style="background: var(--color-bg-dark); border-top: 2px solid var(--color-charcoal-mid); padding: var(--space-8) 0;">
         <div class="container flex-between">
