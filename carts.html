@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Shopping Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Inter:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="C:\Users\hp\Downloads\Techhive.png">
+    <link rel="stylesheet" href="cart/carts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/assets-css/site.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="navbar__brand">
+            <span>Tech</span>Hive
+        </a>
+        <ul class="navbar__links">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="accomplishments.html" >Accomplishments</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li>
+                <a href="carts.html" class="cart,active" title="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-badge"></span>
+                </a>
+            </li>
+        </ul>
+        <div >        
+           <button class="btn btn--primary btn--sm" ><a href="logins.html"><p>Login In</p></a></button>
+           <button class="btn btn--primary btn--sm"><a href="registration.html"><p>Sign In</p></a></button>
+        </div>
+
+    </nav>
+
+    <div class="content">
+        <div class="sidebar">
+            <h3>Your Cart</h3>
+            <p>Review items before checkout.</p>
+        </div>
+
+        <div class="main" id="cart-main">
+        </div>
+    </div>
+
+
+    <script src="/assets/assets-js/cart-badge.js"></script>
+    <script src="/assets/assets-js/cart-notify.js"></script>
+    <script src="/assets/assets-js/profile.js"></script>
+    <script src="cart/carts.js"></script>
+    <footer style="background: var(--color-bg-dark); border-top: 2px solid var(--color-charcoal-mid); padding: var(--space-8) 0;">
+        <div class="container flex-between">
+            <span class="navbar__brand" style="font-size: var(--text-lg);">
+                <span>Tech</span>Hive
+            </span>
+            <p style="color: var(--color-charcoal-light); font-size: var(--text-sm);">
+                &copy; 2026 TechHive. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

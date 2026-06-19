@@ -1,0 +1,36 @@
+/* Shared site styles: footer + small utilities */
+:root{ --footer-bg: #1f1f1f; --footer-fg: #f5f5f5; --footer-muted: #cfcfcf }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+body > * {
+  flex-shrink: 0;
+}
+
+.content, .login-container, .reg-container {
+  flex: 1 1 auto;
+}
+
+.site-footer{
+  background: var(--footer-bg);
+  color: var(--footer-fg);
+  padding: 18px 12px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: auto;
+}
+.site-footer .container{ max-width: 1100px; margin: 0 auto; }
+.site-footer a{ color: var(--footer-fg); text-decoration: underline; }
+.site-footer small{ color: var(--footer-muted); display:block; margin-top:6px; }
+
+/* ensure footer sits after content; pages already use .content with margins */
+.u-hidden{ display: none !important; }

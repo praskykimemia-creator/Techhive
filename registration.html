@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="register/registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/assets-css/password-validator.css">
+    <link rel="stylesheet" href="/assets/assets-css/site.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+</head>
+<body>
+    <div class="reg-container">
+        <a href="index.html" class="back-btn" title="Back to Home">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <h2>Register</h2>
+        <form action="welcome.html" method="post" class="reg-form">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" required>
+            <br>
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" required>
+            <br>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <div id="password-feedback" aria-live="polite" class="password-feedback">
+                <ul class="pw-checklist">
+                    <li data-check="length"><span class="icon">✖</span> At least 6 characters</li>
+                    <li data-check="upper"><span class="icon">✖</span> Uppercase letter</li>
+                    <li data-check="lower"><span class="icon">✖</span> Lowercase letter</li>
+                    <li data-check="number"><span class="icon">✖</span> Number</li>
+                    <li data-check="special"><span class="icon">✖</span> Special character</li>
+                    <li data-check="match"><span class="icon">✖</span> Passwords match</li>
+                </ul>
+            </div>
+            <br>
+            <button type="submit" id="register-btn">Register</button>
+        </form>
+     
+
+    <script src="/assets/assets-js/password-validator.js"></script>
+    <script src="register/registration.js"></script>
+    <script src="/assets/assets-js/profile.js"></script>
+    <script src="/assets/assets-js/cart-badge.js"></script>
+    <script src="/assets/assets-js/cart-notify.js"></script>
+
+    <p>Already have an account? <a href="logins.html">Login here</a></p>
+    </div>
+    <footer style="background: var(--color-bg-dark); border-top: 2px solid var(--color-charcoal-mid); padding: var(--space-8) 0;">
+        <div class="container flex-between">
+            <span class="navbar__brand" style="font-size: var(--text-lg);">
+                <span>Tech</span>Hive
+            </span>
+            <p style="color: var(--color-charcoal-light); font-size: var(--text-sm);">
+                &copy; 2026 TechHive. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html> 

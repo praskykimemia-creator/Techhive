@@ -12,14 +12,29 @@
 </head>
 <body>
 
+    <!-- Navbar -->
     <nav class="navbar">
-        <div class="navbar__brand">TECH<span>HIVE</span></div>
+        <a href="index.html" class="navbar__brand">
+            <span>Tech</span>Hive
+        </a>
         <ul class="navbar__links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#" class="active">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="accomplishments.html" >Accomplishments</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li>
+                <a href="carts.html" class="cart,active" title="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-badge"></span>
+                </a>
+            </li>
         </ul>
+        <div >        
+           <button class="btn btn--primary btn--sm" ><a href="logins.html"><p>Login In</p></a></button>
+           <button class="btn btn--primary btn--sm"><a href="registration.html"><p>Sign In</p></a></button>
+        </div>
+
     </nav>
 
     <header class="hero">
@@ -99,9 +114,14 @@
         </section>
     </main>
 
-    <footer class="section section--dark">
-        <div class="container text-center">
-            <p>&copy; 2026 TechHive. All rights reserved.</p>
+    <footer style="background: var(--color-bg-dark); border-top: 2px solid var(--color-charcoal-mid); padding: var(--space-8) 0;">
+        <div class="container flex-between">
+            <span class="navbar__brand" style="font-size: var(--text-lg);">
+                <span>Tech</span>Hive
+            </span>
+            <p style="color: var(--color-charcoal-light); font-size: var(--text-sm);">
+                &copy; 2026 TechHive. All rights reserved.
+            </p>
         </div>
     </footer>
 
